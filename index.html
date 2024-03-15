@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/index.css">
+    <title>Benjamin Lopez Senati clone</title>
+</head>
+
+<body>
+    <div class="flexcontainer">
+        <div class="sliderdestop">
+            <h1>Blackboard</h1>
+            <div class="lineslier"></div>
+            <div class="divus1">
+                <img src="img/templo-removebg-preview.png" alt="">
+                <p>Pagina de la institucion</p>
+            </div>
+            <div class="divus1">
+                <img src="img/user-removebg-preview.png" alt="" >
+                <p>Benjamin Sebastian Lopez Abarca</p>
+            </div>
+            <div class="divus1">
+                <img src="img/planeta-removebg-preview.png" alt="">
+                <p>Flujo de actividades</p>
+            </div>
+            <div class="divus2">
+                <img src="img/curso-removebg-preview.png" alt="" >
+            <p class="cursoSe">Cusro</p>
+        </div>
+            <div class="divus1">
+                <img src="img/personas-removebg-preview.png" alt="">
+                <p>Organizaciones</p>
+            </div>
+            <div class="divus1">
+                <img src="img/calendario-removebg-preview.png" alt="">
+                <p>Calendario</p>
+            </div>
+            <div class="divus1">
+                <img src="img/mensaje-removebg-preview.png" alt="">
+                <p>Mensaje</p>
+            </div>
+            <div class="divus1">
+                <img src="img/calificaiones-removebg-preview.png" alt="">
+                <p>Calificaciones</p>
+            </div>
+            <div class="divus1">
+                <img src="img/herramientas-removebg-preview.png" alt="">
+                <p>Herramientas</p>
+            </div>
+            <div class="divus1">
+                <img src="img/salir-removebg-preview.png" alt="">
+                <p>Cerrar Seccion</p>
+            </div>
+        </div>
+        <section class="contenedorgeneral">
+            <section class="slider" id="sliderid">
+                <div class="cabecero">
+                    <h3>Blackboard</h3>
+                </div>
+                <div class="bar"></div>
+
+                <div class="container">
+                    <p>Pagina de la institucion</p>
+                    <p>Benjamin Sebastian Lopez Abarca</p>
+                    <p>Flujo de actividades</p>
+                    <p class="cursoSe">Cusro</p>
+                    <p>Organizaciones</p>
+                    <p>Calendario</p>
+                    <p>Mensaje</p>
+                    <p>Calificaciones</p>
+                    <p>Herramientas</p>
+                    <p>Cerrar Seccion</p>
+                </div>
+                <div class="centrarfinal">
+
+                    <div class="creditos">
+                        <p>Benjamin Lopez Abarca (Senati Clone)</p>
+                    </div>
+                </div>
+            </section>
+            <header class="seccion1">
+                <div class="menuhamburgesa" id="menuid">
+                    <div class="barra"></div>
+                    <div class="barra"></div>
+                    <div class="barra"></div>
+                </div>
+                <script>
+                    var slider = document.getElementById("sliderid");
+                    var menu = document.getElementById("menuid");
+
+                    menu.addEventListener("click", function () {
+                        slider.classList.toggle("activo");
+
+                        var sliderActivo = slider.classList.contains("activo");
+                        if (sliderActivo) {
+                            document.body.style.overflow = "hidden";
+                        } else {
+                            document.body.style.overflow = "auto";
+                        }
+                    });
+                </script>
+                <div class="centrarcurso">
+                    <div class="todolos">
+                        <h1>Todo los cursos</h1>
+                    </div>
+                </div>
+                <div class="imagenes">
+                    <img src="img/senatixd.PNG" alt="">
+                    <img src="img/lupa.PNG" alt="">
+                </div>
+            </header>
+            <header class="seccion2">
+                <h1>Benjamin L.</h1>
+                <div class="catalogo">
+                    <img src="img/casita.PNG" alt="">
+                    <p>catalogo de curso</p>
+                </div>
+
+            </header>
+            <div class="lineaheader2">
+            </div>
+            <section class="mover">
+                <div class="flechais">
+                    <img src="img/flecha iz.PNG" alt="">
+                    <p>202410-Benjamin Lopez</p>
+                </div>
+                <div class="centrartext">
+                    <div class="cursosActuales">
+                        <p>Cursos actuales</p>
+                        <img src="img/sing.PNG" alt="">
+                    </div>
+                </div>
+                <div class="flechade">
+                    <p>Proximos cursos</p>
+                    <img src="img/flecha de.PNG" alt="">
+                </div>
+            </section>
+
+            <section class="ultimaseccion">
+                <div class="contenedoriz">
+                    <div class="contenido">
+                        <div class="barrascon">
+                            <div class="bars"></div>
+                            <div class="bars"></div>
+                            <div class="bars"></div>
+                        </div>
+                        <div class="svgxd">
+                            <img src="img/svgxd.PNG" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="buscador">
+                    <input type="text" placeholder="Busqueda de cursos">
+                </div>
+                <div class="fintrador">
+                    <p>Filtrar</p>
+                    <button>Todo los cursos</button>
+                </div>
+                <div class="contenedorde">
+                    <div class="botton">
+                        <button>25 | </button>
+                        <p>elementos por pagina</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="texto">
+                <h3>202410 - Formación Profesional</h3>
+            </section>
+
+            <section class="cusos">
+                <a href="https://benjaminlsa.github.io/">
+                    <div class="centrarcurso">
+                        <div class="paquete">
+                            <div class="img sql"></div>
+                            <div class="code">
+                                <p>
+                                    202410-SCOU-235-TEC-NRC_22769</p>
+                            </div>
+                            <div class="cursoName">
+                                <h2>Sql (Data Base)</h2>
+                                <p>Abierto</p>
+                            </div>
+                            <div class="centrarlinea">
+
+                                <div class="linea"></div>
+                            </div>
+                            <div class="nombreP">
+                                <p>Benjamin lopez Abarca</p>
+                                <img src="img/icionos.PNG" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://benjaminlsa.github.io/">
+                    <div class="centrarcurso">
+                        <div class="paquete">
+                            <div class="img java"></div>
+                            <div class="code">
+                                <p>
+                                    202410-SCOU-235-TEC-NRC_22769</p>
+                            </div>
+                            <div class="cursoName ">
+                                <h2>Java Foundations (ORACLE)</h2>
+                                <p>Abierto</p>
+                            </div>
+                            <div class="centrarlinea">
+
+                                <div class="linea"></div>
+                            </div>
+                            <div class="nombreP">
+                                <p>Benjamin lopez Abarca</p>
+                                <img src="img/icionos.PNG" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://benjaminlsa.github.io/">
+                    <div class="centrarcurso">
+                        <div class="paquete">
+                            <div class="img javascript"></div>
+                            <div class="code">
+                                <p>
+                                    202410-SCOU-235-TEC-NRC_22769</p>
+                            </div>
+                            <div class="cursoName">
+                                <h2>Java script</h2>
+                                <p>Abierto</p>
+                            </div>
+                            <div class="centrarlinea">
+
+                                <div class="linea"></div>
+                            </div>
+                            <div class="nombreP">
+                                <p>Benjamin lopez Abarca</p>
+                                <img src="img/icionos.PNG" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://benjaminlsa.github.io/">
+                    <div class="centrarcurso">
+                        <div class="paquete">
+                            <div class="img kt"></div>
+                            <div class="code">
+                                <p>
+                                    202410-SCOU-235-TEC-NRC_22769</p>
+                            </div>
+                            <div class="cursoName">
+                                <h2>Kotlin (Android Studio)</h2>
+                                <p>Abierto</p>
+                            </div>
+                            <div class="centrarlinea">
+
+                                <div class="linea"></div>
+                            </div>
+                            <div class="nombreP">
+                                <p>Benjamin lopez Abarca</p>
+                                <img src="img/icionos.PNG" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://benjaminlsa.github.io/">
+                    <div class="centrarcurso">
+                        <div class="paquete">
+                            <div class="img kt"></div>
+                            <div class="code">
+                                <p>
+                                    202410-SCOU-235-TEC-NRC_22769</p>
+                            </div>
+                            <div class="cursoName">
+                                <h2>HTML CSS (Desarrollo web)</h2>
+                                <p>Abierto</p>
+                            </div>
+                            <div class="centrarlinea">
+
+                                <div class="linea"></div>
+                            </div>
+                            <div class="nombreP">
+                                <p>Benjamin lopez Abarca</p>
+                                <img src="img/icionos.PNG" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://benjaminlsa.github.io/">
+                    <div class="centrarcurso">
+                        <div class="paquete">
+                            <div class="img portafolio"></div>
+                            <div class="code">
+                                <p>
+                                    202410-SCOU-235-TEC-NRC_22769</p>
+                            </div>
+                            <div class="cursoName">
+                                <h2>Portafolio</h2>
+                                <p>Abierto</p>
+                            </div>
+                            <div class="centrarlinea">
+
+                                <div class="linea"></div>
+                            </div>
+                            <div class="nombreP">
+                                <p>Benjamin lopez Abarca</p>
+                                <img src="img/icionos.PNG" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://benjaminlopeza.github.io/">
+                    <div class="centrarcurso">
+                        <div class="paquete">
+                            <div class="img cocacola"></div>
+                            <div class="code">
+                                <p>
+                                    202410-SCOU-235-TEC-NRC_22769</p>
+                            </div>
+                            <div class="cursoName">
+                                <h2>Web site coca-cola</h2>
+                                <p>Abierto</p>
+                            </div>
+                            <div class="centrarlinea">
+
+                                <div class="linea"></div>
+                            </div>
+                            <div class="nombreP">
+                                <p>Benjamin lopez Abarca</p>
+                                <img src="img/icionos.PNG" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://benjalza.github.io/">
+                    <div class="centrarcurso">
+                        <div class="paquete">
+                            <div class="img nintento"></div>
+                            <div class="code">
+                                <p>
+                                    202410-SCOU-235-TEC-NRC_22769</p>
+                            </div>
+                            <div class="cursoName">
+                                <h2>Web site Nintento</h2>
+                                <p>Abierto</p>
+                            </div>
+                            <div class="centrarlinea">
+
+                                <div class="linea"></div>
+                            </div>
+                            <div class="nombreP">
+                                <p>Benjamin lopez Abarca</p>
+                                <img src="img/icionos.PNG" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://main--poetic-banoffee-0cec22.netlify.app/">
+                    <div class="centrarcurso">
+                        <div class="paquete">
+                            <div class="img clonenetflix"></div>
+                            <div class="code">
+                                <p>
+                                    202410-SCOU-235-TEC-NRC_22769</p>
+                            </div>
+                            <div class="cursoName">
+                                <h2>Netflix clone</h2>
+                                <p>Abierto</p>
+                            </div>
+                            <div class="centrarlinea">
+
+                                <div class="linea"></div>
+                            </div>
+                            <div class="nombreP">
+                                <p>Benjamin lopez Abarca</p>
+                                <img src="img/icionos.PNG" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://benjaminlsa.github.io/">
+                    <div class="centrarcurso">
+                        <div class="paquete">
+                            <div class="img kt"></div>
+                            <div class="code">
+                                <p>
+                                    202410-SCOU-235-TEC-NRC_22769</p>
+                            </div>
+                            <div class="cursoName">
+                                <h2>Kali linux (Ciber Seguridad)</h2>
+                                <p>Abierto</p>
+                            </div>
+                            <div class="centrarlinea">
+
+                                <div class="linea"></div>
+                            </div>
+                            <div class="nombreP">
+                                <p>Benjamin lopez Abarca</p>
+                                <img src="img/icionos.PNG" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://benjaminlsa.github.io/">
+                    <div class="centrarcurso">
+                        <div class="paquete">
+                            <div class="img kt"></div>
+                            <div class="code">
+                                <p>
+                                    202410-SCOU-235-TEC-NRC_22769</p>
+                            </div>
+                            <div class="cursoName">
+                                <h2>Reat</h2>
+                                <p>Abierto</p>
+                            </div>
+                            <div class="centrarlinea">
+
+                                <div class="linea"></div>
+                            </div>
+                            <div class="nombreP">
+                                <p>Benjamin lopez Abarca</p>
+                                <img src="img/icionos.PNG" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </section>
+        </section>
+    </div>
+</body>
+
+</html>

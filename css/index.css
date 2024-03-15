@@ -1,0 +1,646 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F8F8F8;
+    position: relative;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.seccion1 {
+    background-color: #0939E6;
+    height: 60px;
+    width: 100%;
+    position: relative;
+}
+
+.menuhamburgesa {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 1;
+
+}
+
+.barra {
+    border-radius: 5px;
+    height: 2px;
+    width: 20px;
+    background-color: white;
+    margin: .2em;
+}
+
+.centrarcurso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todolos h1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    padding-top: .7em;
+}
+
+.imagenes {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 1em;
+    top: .8em;
+}
+
+.mover {
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    box-shadow: -1px -1px 13px rgba(0, 0, 0, 0.5)
+}
+
+.centrartext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursosActuales p {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    padding-top: 1em;
+}
+
+.cursosActuales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursosActuales img {
+    padding-top: 1.3em;
+    margin-left: .5em;
+    cursor: pointer;
+}
+
+.flechais {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flechade {
+    position: absolute;
+    right: 0;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flechade p,
+.flechais p {
+    display: none;
+}
+
+.ultimaseccion {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedoriz {
+    position: absolute;
+    background-color: white;
+    width: 80px;
+    height: 38px;
+    border: 1px solid gray;
+    left: 1em;
+    top: 1em;
+}
+
+.botton {
+    display: flex;
+    align-items: center;
+}
+
+.botton button {
+    padding: .6em 0.6999999999999993em;
+    background-color: white;
+    border: 1px solid #CDCDCD;
+}
+
+.contenedorde {
+    position: absolute;
+    right: 2em;
+    top: 1em;
+}
+
+.botton button::after {
+    top: .3rem;
+    width: 0;
+    margin-left: .1em;
+    border: 7px solid transparent;
+    height: 0.75rem;
+    content: "";
+    display: inline-block;
+    position: relative;
+    border-width: 6px 4px 0 4px;
+    vertical-align: middle;
+    border-top-color: #262626;
+}
+
+.botton p {
+    padding-left: 1em;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.contenido {
+    position: relative;
+    display: flex;
+}
+
+.barrascon {
+    padding-top: 0.6em;
+    padding-left: 0.4em;
+}
+
+.bars {
+    height: 4px;
+    width: 20px;
+    background-color: black;
+    margin: .1em .1em;
+    border-radius: 5px;
+}
+
+.svgxd {
+    position: absolute;
+    right: .5em;
+    top: .5em;
+}
+
+.texto h3 {
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.texto {
+    height: 70px;
+    width: 100%;
+}
+
+.centrarcurso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paquete {
+    background-color: #FFFFFF;
+    height: 250px;
+    width: 500px;
+    margin: 0em 1em;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+    cursor: pointer;
+    margin: 1em;
+
+}
+
+.paquete:hover {
+    transform: translateY(-10px);
+    box-shadow: 6px 12px 32px rgba(0, 0, 0, 0.5)
+}
+
+.img {
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 50%;
+}
+
+.code p {
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.cursoName,
+.code {
+    padding-top: .5em;
+    padding-left: 1em;
+}
+
+.cursoName h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.paquete:hover .cursoName>h2 {
+    text-decoration: underline;
+}
+
+.cursoName p {
+    font-family: sans-serif;
+    font-size: 14px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.centrarlinea {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.linea {
+    width: 95%;
+    height: 1px;
+    background-color: #CDCDCD;
+    border-radius: 20px;
+}
+
+.nombreP p {
+    font-family: sans-serif;
+    font-size: 15px;
+    padding-top: .5em;
+    padding-left: 1em;
+}
+
+.nombreP {
+    position: relative;
+}
+
+.nombreP img {
+    position: absolute;
+    right: 1em;
+    top: 0;
+}
+
+.java {
+    background-image: url(https://image.slidesharecdn.com/3-jueves-11541-java-230701071856-69366e1d/75/3jueves11541-javapptx-2-2048.jpg?cb=1688196259);
+    background-position: top;
+}
+
+.sql {
+    background-image: url(https://techsenati.edu.pe/wp-content/uploads/2022/06/bi.png);
+}
+
+.javascript {
+    background-image: url(https://scontent.flim12-1.fna.fbcdn.net/v/t1.6435-9/182966839_3838285106269102_7749422062419476565_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Z7kF-UOFm6cAX8U5Sbr&_nc_oc=AQmCQ1J3862vUZ8EzLxTwufpO6J7fXGvCqY5d27KqnWsBm98XpP9Ugd3PQ3R_MyCGeLdEwvHZYPkjiVbG0IYqCF5&_nc_ht=scontent.flim12-1.fna&oh=00_AfCBFygeJlpYWUdNmURw_fFwC24l2X0dUIIVPGyBcINo9Q&oe=661AC9CB);
+}
+
+.kt {
+    background-position: top;
+    background-image: url(https://image.slidesharecdn.com/apuntessobresistemasoperativossemana1-230823164250-73cace8a/75/apuntes-sobre-sistemasoperativossemana1pptx-1-2048.jpg?cb=1692809330);
+}
+
+.portafolio {
+
+    background-image: url(/img/portafolio.PNG);
+}
+
+.cocacola {
+    background-position: top;
+    background-image: url(/img/cocacola.PNG);
+}
+
+.nintento {
+    background-position: top;
+    background-image: url(/img/nintento.PNG);
+}
+
+.clonenetflix {
+    background-position: top;
+    background-image: url(/img/netflix.PNG);
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    background-color: #262626;
+    position: absolute;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%);
+
+}
+
+.slider.activo {
+    transform: translateY(0%);
+}
+
+.cabecero {
+    height: 50px;
+}
+
+.cabecero h3 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding-top: 1em;
+    color: white;
+}
+
+.bar {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.container {
+    padding-top: 1em;
+}
+
+.container p {
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    transition: background-color 0.5s ease;
+}
+
+.container p:hover {
+    background-color: #1B1B1B;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cursoSe {
+ 
+    width: 100%;
+}
+.divus1{
+    transition: background-color 0.5s ease;
+}
+.divus1:hover{
+    background-color: #1B1B1B;
+}
+.divus2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0939E6;
+}
+
+.centrarfinal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.creditos {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 5em;
+}
+
+.sliderdestop {
+    display: none;
+}
+
+.seccion2 {
+    display: none;
+}
+.buscador ,.fintrador{
+    display: none;
+}
+.lineaheader2{
+    display: none;
+}
+@media screen and (min-width: 690px) {
+
+    .cusos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paquete {
+        background-color: #FFFFFF;
+        height: 250px;
+        width: 306px;
+        margin: 0em 1em;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+        position: relative;
+        cursor: pointer;
+        margin: 1em;
+    }
+
+    .slider {
+        width: 368px;
+        transform: translateX(-105%);
+    }
+
+    .slider.activo {
+        transform: translateX(-1%);
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .paquete {
+        width: 414px;
+    }
+}
+
+@media screen and (min-width: 1026px) {
+    .contenedorgeneral{
+        margin-left: 13em;
+    }
+ .paquete {
+    width: 328px;
+}
+    .slider {
+        display: none;
+    }
+
+    .menuhamburgesa {
+        display: none;
+    }
+.flexcontainer{
+    position: relative;
+}
+    .sliderdestop {
+        display: block;
+        width: 220px;
+        background-color: #262626;
+        position: fixed;
+        height: 100vh;
+        z-index: 1;
+    }
+    .sliderdestop p:hover {
+        background-color: #1B1B1B;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+   
+    .sliderdestop p{
+        font-family: sans-serif;
+        font-size: 17px;
+        padding: 1.5em 1em;
+        color: white;
+        transition: background-color 0.5s ease;
+    }
+    .sliderdestop h1{
+        font-size: 29px;
+        padding-top: 1.2em;
+     text-align: center;
+        color: white;
+        font-family: sans-serif;
+        margin: 0em .5em;
+    }
+    .lineslier{
+        width: 100%;
+        height: 1px;
+        background-color: black;
+       margin-top: 3.2em;
+    }
+   
+    .flexcontainer {
+        display: flex;
+    }
+
+    .seccion1 {
+        display: none;
+    }
+
+    .seccion2 {
+        display: block;
+        height: 122px;
+        background-color: #FFFFFF;
+        position: relative;
+    }
+
+    .seccion2 h1 {
+        font-family: Arial; 
+        font-size: 50px;
+        padding-top: .7em;
+        padding-left: 1em;
+    }
+
+    .catalogo {
+        position: absolute;
+        right: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 2.6em;
+    }
+
+    .catalogo p {
+        margin-left: .5em;
+        font-family: sans-serif;
+        font-size: 15px;
+    }
+
+    .mover {
+        box-shadow: -1px 13px 22px -19px rgba(0, 0, 0, 0.5);
+    }
+
+    .flechade p,
+    .flechais p {
+        display: block;
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+    .flechade p{
+        padding-right: 1em;
+    }
+    .flechais p{
+        padding-left: 1em;
+    }
+    .buscador ,.fintrador{
+        display: block;
+        position: absolute;
+    }
+    .fintrador{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 364px;
+
+    }
+    .fintrador p{
+        font-family: sans-serif;
+        font-size: 12px;
+        padding-right: .5em;
+        font-weight: bold;
+    }
+    .buscador{
+        position: absolute;
+        left: 120px;
+        
+    }
+    .buscador input{
+        padding: .7em 2em;
+    }
+    .fintrador button{
+        padding: .6em 0.6999999999999993em;
+        background-color: #FFFFFF;
+        border: 1px solid #CDCDCD;
+    }
+    .fintrador button::after {
+        top: .3rem;
+        width: 0;
+        margin-left: 1em;
+        border: 7px solid transparent;
+        height: 0.75rem;
+        content: "";
+        display: inline-block;
+        position: relative;
+        border-width: 6px 4px 0 4px;
+        vertical-align: middle;
+        border-top-color: #262626;
+    }
+    .lineaheader2{
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #CDCDCD;
+    }
+    .texto h3 {
+
+        padding-left: 3em;
+    }
+    .divus1,.divus2 {
+        display: flex;
+        align-items: center;
+    }
+    .divus1 img,.divus2 img{
+        max-width: 40px;
+        margin-left: .7em;
+    }
+   
+   
+}
